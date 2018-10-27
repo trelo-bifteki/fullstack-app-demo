@@ -1,4 +1,4 @@
-rootProject.name = 'web'
+rootProject.name = 'fullstack-app-demo'
 
-include ':api'
-include ':web'
+include 'ui'
+include 'web'
