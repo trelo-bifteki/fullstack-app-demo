@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
  * Created by lambros on 27.10.18.
  */
 @Controller
-public class DemoController {
+public class WebController {
 
     @GetMapping("/")
     public String redirectToIndex() {
