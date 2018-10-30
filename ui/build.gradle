@@ -21,6 +21,8 @@ jar {
 
 npm_run_build.inputs.dir 'src'
 npm_run_build.inputs.file 'package.json'
+npm_run_build.inputs.file 'babel.config.js'
 npm_run_build.outputs.dir 'dist'
 
 jar.dependsOn npm_run_build
+test.dependsOn npm_run_unittest
