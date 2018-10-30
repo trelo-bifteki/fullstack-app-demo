@@ -5,6 +5,14 @@ plugins {
 apply plugin: 'java'
 apply plugin: 'com.moowork.node'
 
+
+node {
+  version = '10.6.0'
+  npmVersion = '6.1.0'
+  distBaseUrl = 'https://nodejs.org/dist'
+  download = true
+
+}
 jar {
   from('dist') {
     into "META-INF/resources/webjars/${project.name}/${project.version}"
