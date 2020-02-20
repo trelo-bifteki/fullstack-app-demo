@@ -3,8 +3,8 @@ pipeline {
   stages {
 
     stage('Check for vulnerabilities') {
-      dir('ui') {
-        steps {
+      steps {
+        dir('ui') {
           sh 'npm audit --parseable --production'
         }
       }
