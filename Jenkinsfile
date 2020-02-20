@@ -10,15 +10,16 @@ pipeline {
       }
     }
 
-    stage('download dependencies') {
+    stage('Check linting') {
       steps {
-        sh 'npm ci'
+        sh './gradlew :ui:npm_run_lint'
       }
     }
 
-    stage('Check linting') {
+
+    stage('download dependencies') {
       steps {
-        sh 'npm run lint'
+        sh './gradlew build'
       }
     }
 
