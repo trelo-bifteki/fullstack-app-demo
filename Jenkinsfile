@@ -10,9 +10,9 @@ pipeline {
       }
     }
 
-    stage('Check linting') {
+    stage('build') {
       steps {
-        sh './gradlew :ui:npm_run_lint'
+        sh './gradlew builc'
       }
     }
 
